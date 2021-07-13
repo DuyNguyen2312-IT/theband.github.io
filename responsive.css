@@ -1,0 +1,73 @@
+
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+}
+
+
+@media (min-width: 739px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+ 
+}
+
+@media (max-width: 739px) {
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+
+  .container {
+    padding: 32px
+  }
+
+  .navbar-list {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+
+  
+  .tour-dates {
+    padding: 16px 0;
+  }
+
+  .member {
+    padding: 16px 32px;
+  }
+
+  .tour-on-mobile {
+    margin-top: 16px;
+  }
+
+  .header-menu-mobile {
+    display: block;
+  }
+
+  .contact-form {
+    width: 100%;
+  }    
+
+  .btn-bars-mobile {
+    height: var(--header-height);
+    font-size: 1.8rem;
+    padding: 12px 24px;
+  }
+
+  .btn-send {
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --header-height: 46px;
+}
+
+.header {
+  height: var(--header-height);
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-menu-mobile {
+  display: none;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  list-style: none;
+  position: relative;
+  display: block;
+}
+
+.navbar-item-link {
+  display: flex;
+  align-items: center;
+  line-height: 4.6rem;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 0 24px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.navbar-sub-item {
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: 4px;
+  display: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0,3);
+  transition: all 0.2s ease;
+}
+
+.navbar-sub-item  .navbar-item-link   {
+  color: #333;
+}
+
+.navbar-item-link:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+}
+
+.navbar-item:hover .navbar-sub-item {
+  display: block;
+}
+
+.navbar-sub-item .navbar-item-link {
+  border-radius: 4px;;
+}
+
+.navbar-item-icon {
+  margin-left: 4px;
+  display: block;
+}
+
+.navbar-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navbar-icon-search {
+  height: var(--header-height);
+  color: #fff;
+  font-size: 1.8rem;
+  display: block;
+  padding: 12px 24px;
+  transition: all 0.2s ease;
+}
+
+.navbar-icon-search:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #f44336;
+}
+
+.display {
+  margin-top: var(--header-height);
+  position: relative;
+}
+
+.display-img {
+  width: 100%;
+}
+
+.display-detail {
+  color: #fff;
+  bottom: 47px;
+
+  position: absolute;
+  width: 100%;
+
+  /* right: 0;
+    left: 0; */
+
+  left: 50%;
+  transform:translateX(-50%);
+
+  text-align: center;
+}
+
+.display-place {
+  font-size: 2.4rem;
+}
+
+.display-desc {
+  font-size: 1.6rem;
+  margin-top: 25px;
+}
+
+
+/* * info */
+
+.container {
+  padding: 64px 16px;
+  background-color: #fff;
+}
+
+.info-header {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.info-sub {
+  font-size: 1.6rem;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.info-desc {
+  font-size: 1.6rem; 
+  margin-top: 15px;
+  text-align: justify;
+  line-height: 2.6rem;
+}
+
+/* * Member */
+
+.member {
+  padding: 32px;
+  text-align: center;
+}
+
+.member-name {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.member-img {
+  width: 80%;
+  border-radius: 4px;
+}
+
+/* * Tour */
+
+.tour {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #333;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+.form-input {
+  padding: 8px 16px;
+  display: flex;
+  position: relative;
+}
+
+.form-input:nth-child(2) {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.form-month {
+  font-size: 1.6rem;
+  opacity: 0.8;
+  min-width: 90px;
+}
+
+.form-sold {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #f44336;
+  padding: 2px 4px;
+  border-radius: 2px;
+  min-width: 60px;
+}
+
+.form-sold:last-child{ 
+  text-align: center;
+}
+
+/** Tour */
+
+.tour-dates {
+  padding: 32px 0;
+}
+
+.tour-img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.tour-img:hover {
+  opacity: 0.8;
+}
+
+.tour-info {
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #333;
+  padding:16px;
+  border-radius: 4px;
+
+}
+
+.tour-place {
+  padding-bottom: 15px;
+}
+
+.tour-date {
+
+}
+
+.tour-desc {
+  padding: 15px 0;
+}
+
+.btn {
+  padding-bottom: 15px;
+  padding: 8px 16px;
+  display: block;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #ccc;
+  opacity: 0.9;
+}
+
+/* * contact */
+
+.contact {
+  padding: 32px 0;
+  font-size: 2rem
+}
+
+.contact-place {
+  margin: 8px 0;
+}
+
+.contact-icon {
+  margin-right: 8px;
+}
+
+
+.form-control {
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  margin: 4px 0;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-input-top {
+  display: flex;
+}
+
+.form-control-1 {
+  flex: 1;
+  margin-right: 4px;
+}
+.form-control-2 {
+  flex: 1;
+  margin-left: 4px;
+}
+
+.contact-input-bottom {
+  display: flex;
+}
+
+.form-control-3 {
+  flex: 1;
+}
+
+.btn-send {
+  margin: 16px 9px 16px 0;
+  position: absolute;
+  right: 0;
+}
+
+/* * Maps */
+
+.map-img {
+  width: 100%;
+}
+
+/* * footer */
+
+.social-icon {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+
+.social-by > a,
+.social-icon > a {
+  text-decoration: none;
+  color: #333;
+  opacity: 0.8;
+} 
+
+.social-icon > a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.social-by {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 2rem;
+}
+

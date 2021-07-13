@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    
+    <div class="header-menu-mobile">
+      <i class="btn btn-bars-mobile fas fa-bars"></i>
+    </div>
+
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a href="#" class="navbar-item-link">HOME</a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="#band" class="navbar-item-link">BAND</a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="#tour" class="navbar-item-link">TOUR</a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="#contact" class="navbar-item-link">CONTACT</a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="#" class="navbar-item-link">
+          <span>MORE</span>
+          <i class="navbar-item-icon fas fa-angle-down"></i>
+        </a>
+        <div class="navbar-sub-item">
+          <ul class="navbar-sub-list">
+            <li class="navbar-item">
+              <a href="#map" class="navbar-item-link">MAP</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#footer" class="navbar-item-link">FOOTER</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-item-link">Other</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <div class="navbar-icon">
+      <i class="navbar-icon-search fas fa-search"></i>
+    </div>
+  </header>
+
+  <div class="display">
+    <img src="https://www.w3schools.com/w3images/chicago.jpg" class="display-img" alt="Live-Show">
+    <div class="display-detail">
+      <h2 class="display-place">Chicago</h2>
+      <p class="display-desc">Thank you, Chicago - A night we won't forget.</p>
+    </div>
+  </div>
+
+  <div id = "band" class="container">
+    <div class="grid wide">
+      <div class="info-header">
+        THE BAND
+      </div>
+      <div class="info-sub">
+        We love music
+      </div>
+      <p class="info-desc">
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="row">
+        <div class="col l-4 m-4 c-12">
+          <div class="member">
+            <p class="member-name">Duy Nguyen</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="member-img">
+          </div>
+        </div>
+
+        <div class="col l-4 m-4 c-12">
+          <div class="member">
+            <p class="member-name">Duy Nguyen</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="member-img">
+          </div>
+        </div>
+
+        <div class="col l-4 m-4 c-12">
+          <div class="member">
+            <p class="member-name">Duy Nguyen</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="member-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col l-12">
+          
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <div  id="tour" class="tour container">
+    <div class="grid wide">
+      <div class="info-header">
+        TOUR DATES
+      </div>
+      <div class="info-sub">
+        Remember to book your tickets!
+      </div>
+     
+      <div class="form-container">
+        <div class="form-input">
+          <p class="form-month">September</p>
+          <span class="form-sold">Sold out</span>
+        </div>
+
+        <div class="form-input">
+          <p class="form-month">October </p>
+          <span class="form-sold">Sold out</span>
+        </div>
+
+        <div class="form-input">
+          <p class="form-month">November3</p>
+          <span class="form-sold">3</span>
+        </div>
+      </div>
+
+      <div class="tour-dates">
+        <div class="row">
+          <div class="tour-on-mobile col l-4 m-4 c-12">
+            <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="" class="tour-img">
+            <div class="tour-info">
+              <h2 class="tour-place">New York</h2>
+              <p class="tour-date">Fri 27 Nov 2016</p>
+              <p class="tour-desc">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="btn btn-buy">Buy Ticket</button>
+            </div>
+          </div>
+
+          <div class="tour-on-mobile col l-4 m-4 c-12">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="" class="tour-img">
+            <div class="tour-info">
+              <h2 class="tour-place">Paris</h2>
+              <p class="tour-date">Sat 28 Nov 2016</p>
+              <p class="tour-desc">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="btn btn-buy">Buy Ticket</button>
+            </div>
+          </div>
+
+
+          <div class="tour-on-mobile col l-4 m-4 c-12">
+            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="" class="tour-img">
+            <div class="tour-info">
+              <h2 class="tour-place">San Francisco</h2>
+              <p class="tour-date">Sun 29 Nov 2016</p>
+              <p class="tour-desc">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="btn btn-buy">Buy Ticket</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div  id="contact" class="container">
+    <div class="grid wide">
+      <div class="info-header">
+        CONTACT
+      </div>
+      <div class="info-sub">
+        Fan? Drop a note!
+      </div>
+      <div class="contact">
+        <div class="row">
+          <div class="col l-6">
+           <p class="contact-place">
+             <i class="contact-icon fas fa-map-marker-alt"></i>
+             Chicago, US
+           </p>
+   
+           <p class="contact-place">
+             <i class="contact-icon fas fa-phone-alt"></i>
+             Phone: +00 151515
+           </p>
+   
+           <p class="contact-place">
+             <i class="contact-icon fas fa-envelope"></i>
+             Email: mail@mail.com
+           </p>
+          </div>
+          <div class="contact-form col l-6">
+            <div class="contact-input-top">
+              <input type="text" class="form-control form-control-1" name="name" placeholder="name">
+              <input type="text" class="form-control form-control-2" name="email" placeholder="email">
+            </div>
+   
+            <div class="contact-input-bottom">
+             <input type="text" class="form-control form-control-3" name="message" placeholder="message">
+            </div>
+   
+            <button class="btn btn-send">Send</button>
+          </div>
+        </div>
+      </div>
+     
+
+    </div>  
+  </div>
+
+  <div id = "map" class="map">
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="map-img">
+  </div>
+
+  <footer id="footer" class="container">
+    <div class="social-icon">
+      <a href="">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-apple"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-twitch"></i>
+      </a>
+    </div>
+    <div class="social-by">
+      <a href="" class="">
+        Duy Nguyen FullStack
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
